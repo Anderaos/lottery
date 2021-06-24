@@ -12,6 +12,10 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/views/index.html")
 })
 
+app.get('/result', function (req, res) {
+    res.sendFile(__dirname + "/views/result.html")
+})
+
 app.listen(process.env.PORT || 3000, function () {
     console.log("Server is runnning on port 3000")
 })
