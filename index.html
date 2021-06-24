@@ -163,8 +163,8 @@
 <script type="text/javascript" src="js/zepto.js"></script>
 <script type="text/javascript" src="js/vue.js"></script>
 <script type="text/javascript" src="js/tagcanvas.js"></script>
-<script type="text/javascript" src="js/member.js"></script>
-<!-- <script type="text/javascript" src="js/csvjson.js"></script> -->
+<!-- <script type="text/javascript" src="js/member.js"></script> -->
+<script type="text/javascript" src="js/csvjson.js"></script>
 <script type="text/javascript">
     (function(){
         var choosed = JSON.parse(localStorage.getItem('choosed')) || {};
@@ -173,7 +173,7 @@
             return [0.1 * Math.random() + 0.01, -(0.1 * Math.random() + 0.01)];
         };
         var getKey = function(item){
-            return item.name + '-' + item.phone;
+            return item.Sobrenome + '-' + item.Nome;
         };
         var createHTML = function(){
             var html = [ '<ul>' ];
@@ -181,7 +181,7 @@
                 item.index = index;
                 var key = getKey(item);
                 var color = choosed[key] ? 'red' : 'black';
-                html.push('<li><a href="#" style="color: ' + color + ';">' + item.name + '</a></li>');
+                html.push('<li><a href="#" style="color: ' + color + ';">' + item.Sobrenome + '</a></li>');
             });
             html.push('</ul>');
             return html.join('');
@@ -206,7 +206,7 @@
                 .map(function(m){
                   choosed[getKey(m)] = 1;
                   list[m.index].style.color = color;
-                  return m.name + '<br/>' + m.phone; 
+                  return m.Sobrenome + '<br/>' + m.Nome; 
                 });
             localStorage.setItem('choosed', JSON.stringify(choosed));
             return ret;
