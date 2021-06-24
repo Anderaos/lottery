@@ -1,12 +1,13 @@
-# The annual meeting lottery program written N years ago
+# Versão pt/br da loteria de fouber
 
-[demo](https://fouber.github.io/lottery/)
+[demo](http://lottery.phygitalsolutions.com.br/)
+[demo original em chinês](https://fouber.github.io/lottery/)
 
-## Lottery process:
+## Processo e configuração:
 
-1. Choose the number of people who will be in the draw (30, 10, 5, 2, 1)
-2. Click the "Start" button to enter the lottery state (you can still modify the lottery number during this process)
-3. Click "Stop! 』Button to generate the lottery result
-4. Click the button of any number of people, you can return to the idle state, the users who have won the prize are marked as yellow, and they will not hit twice
+1. Escolha o número de nomes a serem sorteados (30, 10, 5, 2, 1)
+2. Clique em "Rodar" para entrar no estado de sorteio (ainda é possível modificar o número de sorteados durante este processo)
+3. Clique em "Parar!" para gerar o resultado
+4. Clique em qualquer botão de número de sorteados para voltar ao estado inicial. Os nomes vencedores ficam marcados em vermelho e não serão sorteados novamente.
 
-PS: Roll the mouse wheel to zoom in or out of the sphere
+PS: Utilize a roda do mouse para dar zoom in/out da esfera
