@@ -210,7 +210,7 @@
                 .map(function(m){
                   choosed[getKey(m)] = 1;
                   list[m.index].style.color = color;
-                  return m.Sobrenome + '<br/>' + m.Nome; 
+                  return m.Nome + '<br/>' + m.Sobrenome; 
                 });
             localStorage.setItem('choosed', JSON.stringify(choosed));
             return ret;
