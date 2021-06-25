@@ -66,13 +66,13 @@
             let vm = this
             let locals = window.localStorage
             let str_results = []
-            // 遍历(排除choosed)
+            // Traversed (Exclude choosen)
             for(let i = 0; i<localStorage.length; i++){
                 if (localStorage.key(i) !== 'choosed') {
                     str_results.push(localStorage.getItem(localStorage.key(i)))
                 }
             }
-            // 分割每个string, 并将</br>换成空格
+            // Split each string and add </br> in spaces
             let results = []
             for(let nameList of str_results) {
                 let temp = JSON.parse(nameList)
@@ -80,7 +80,7 @@
                 results.push(temp)
             }
             
-            // 根据长度进行排序，名单短的放在前面
+            // Sort according to length, the short list is placed first
             results = results.sort((x, y) => { return x.length - y.length;})
             this.results = results
         },
