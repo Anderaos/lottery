@@ -145,7 +145,7 @@
 <body>
 <div id="main" class="wall">
     <div class="result-btn">
-       <a href="./result.html" target="_blank" style="color: white">Lista de Sorteados</a>
+       <a href="./result.html" target="_blank" style="color: black">Lista de Sorteados</a>
     </div>
 </div>
 <div id="result" class="result">
@@ -188,7 +188,7 @@
             member.forEach(function(item, index){
                 item.index = index;
                 var key = getKey(item);
-                var color = choosed[key] ? 'yellow' : 'white';
+                var color = choosed[key] ? 'red' : 'black';
                 html.push('<li><a href="#" style="color: ' + color + ';">' + item.Sobrenome + '</a></li>');
             });
             html.push('</ul>');

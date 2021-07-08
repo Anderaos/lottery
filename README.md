@@ -1,7 +1,6 @@
-# Versão pt/br da loteria de fouber
+# Lottery SPA
 
-[demo](http://lottery.phygitalsolutions.com.br/)
-[demo original em chinês](https://fouber.github.io/lottery/)
+[Link do site](http://lottery.phygitalsolutions.com.br/)
 
 ## Processo e configuração:
 
